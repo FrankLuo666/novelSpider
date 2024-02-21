@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sites>
+    <site>
+        <title>顶点小说</title>
+        <charset>UTF-8</charset>
+        <url>https://www.ddxsss.com</url>
+        <chapter-list-selector>.listmain dd a</chapter-list-selector>
+        <chapter-detail-title-selector>.content h1,0</chapter-detail-title-selector>
+        <chapter-detail-content-selector>#chaptercontent</chapter-detail-content-selector>
+        <chapter-detail-prev-selector>.Readpage.pagedown a</chapter-detail-prev-selector>
+        <chapter-detail-next-selector>.Readpage.pagedown a,2</chapter-detail-next-selector>
+    </site>
+
+    <site>
+        <title>笔趣阁1</title>
+        <charset>UTF-8</charset>
+        <url>https://www.bqgll.cc</url>
+        <chapter-list-selector>.listmain dd a</chapter-list-selector>
+        <chapter-detail-title-selector>.content h1,0</chapter-detail-title-selector>
+        <chapter-detail-content-selector>#chaptercontent</chapter-detail-content-selector>
+        <chapter-detail-prev-selector>.Readpage.pagedown a</chapter-detail-prev-selector>
+        <chapter-detail-next-selector>.Readpage.pagedown a,2</chapter-detail-next-selector>
+    </site>
+
+    <site>
+        <title>笔趣阁2</title>
+        <charset>gbk</charset>
+        <url>https://52wx.com</url>
+        <chapter-list-selector>#section-list li a</chapter-list-selector>
+        <chapter-detail-title-selector>.reader-main h1,0</chapter-detail-title-selector>
+        <chapter-detail-content-selector>#content</chapter-detail-content-selector>
+        <chapter-detail-prev-selector>.reader-main .section-opt a</chapter-detail-prev-selector>
+        <chapter-detail-next-selector>.reader-main .section-opt a,2</chapter-detail-next-selector>
+    </site>
+</sites>

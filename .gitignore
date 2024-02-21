@@ -1,0 +1,21 @@
+# 忽略临时文件
+*.iml
+*.ipr
+*.iws
+
+# 忽略编译输出目录
+/target/
+
+# 忽略IDEA生成的文件
+.idea/
+
+# 忽略日志文件
+*.log
+
+# 忽略编译产生的文件
+*.class
+
+# 忽略Maven和Gradle构建目录
+/.mvn/
+/.gradle/
+
