@@ -1,5 +1,8 @@
 package novel.spider;
 
+import lombok.Data;
+import lombok.Getter;
+
 /**
  * 已经被支持的小说网站枚举
  * @author LiuKeFeng
@@ -10,7 +13,9 @@ public enum NovelSiteEnum {
 	BiQuGe1(2, "bqgll.cc"),
 	BiQuGe2(3, "52wx.com");
 
+	@Getter
 	private int id;
+	@Getter
 	private String url;
 
 	private NovelSiteEnum(int id, String url) {
@@ -19,12 +24,11 @@ public enum NovelSiteEnum {
 	}
 
 	public static NovelSiteEnum getEnumById(int id) {
-		switch (id) {
-			case 1 : return DingDianXiaoShuo;
+		 switch (id) {
+			 case 1 : return DingDianXiaoShuo;
 			case 2 : return BiQuGe1;
 			case 3 : return BiQuGe2;
-			default :
-				throw new RuntimeException("id=" + id + "是不被支持的小说网站");
+			default : throw new RuntimeException("id=" + id + "是不被支持的小说网站");
 		}
 	}
 

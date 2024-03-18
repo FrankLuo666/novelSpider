@@ -1,4 +1,4 @@
-package novel.spider.impl;
+package novel.spider.impl.download;
 
 import java.io.File;
 import java.io.IOException;
@@ -82,8 +82,8 @@ public class NovelDownload implements INovelDownload {
                 e.printStackTrace();
             }
         }
-        NovelSpiderUtil.multiFileMerge(savePath, null, true);
-        return savePath + "/merge.txt";
+        NovelSpiderUtil.multiFileMerge(savePath, savePath+"/save/merge.txt", true);
+        return savePath + "/save/merge.txt";
     }
 }
 

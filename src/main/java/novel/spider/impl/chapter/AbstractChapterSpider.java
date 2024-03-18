@@ -1,8 +1,9 @@
-package novel.spider.impl;
+package novel.spider.impl.chapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import novel.spider.impl.AbstractSpider;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

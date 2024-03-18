@@ -1,7 +1,8 @@
-package novel.spider.impl;
+package novel.spider.impl.chapter;
 
 import java.util.Map;
 
+import novel.spider.impl.AbstractSpider;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -16,7 +17,9 @@ public abstract class AbstractChapterDetailSpider extends AbstractSpider impleme
     public ChapterDetail getChapterDetail(String url) {
         try {
             String result = super.crawl(url);
+//            System.out.println(result);
             result = result.replace("&nbsp;", " ").replace("<br />", "\n").replace("<br/>", "\n");
+//            System.out.println(result);
             Document doc = Jsoup.parse(result);
             doc.setBaseUri(url);
             Map<String, String> contexts = NovelSpiderUtil.getContext(NovelSiteEnum.getEnumByUrl(url));
